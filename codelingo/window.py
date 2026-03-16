@@ -62,7 +62,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         self._run_button = Gtk.Button(label=_("Run"))
         self._run_button.add_css_class("suggested-action")
         self._run_button.set_icon_name("media-playback-start-symbolic")
-        self._run_button.set_tooltip_text("Kör programmet (Ctrl+Enter)")
+        self._run_button.set_tooltip_text(_("Run the program (Ctrl+Enter)"))
         self._run_button.connect("clicked", self._on_run_clicked)
 
         self._debug_button = Gtk.Button(label="Debugga")
@@ -460,7 +460,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         result = self._translator.translate(swedish_code)
         if result.errors:
             for error in result.errors:
-                self._output.append_stderr(f"Översättningsfel: {error}\n")
+                self._output.append_stderr(f_("Translation error: {error}\n"))
             return
 
         # Kör
@@ -536,7 +536,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         result = self._translator.translate(swedish_code)
         if result.errors:
             for error in result.errors:
-                self._output.append_stderr(f"Översättningsfel: {error}\n")
+                self._output.append_stderr(f_("Translation error: {error}\n"))
             return
 
         # Starta debugger

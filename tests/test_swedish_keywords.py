@@ -68,11 +68,11 @@ class TestKeywordMappings:
         import keyword
         python_kws = set(keyword.kwlist) | {"True", "False", "None"}
         for eng in KEYWORDS.values():
-            assert eng in python_kws, f"{eng} är inte ett Python-nyckelord"
+            assert eng in python_kws, f_("{eng} is not a Python keyword")
 
     def test_builtins_map_to_python_builtins(self):
         """Verifiera att builtins mappar till riktiga Python-builtins."""
         import builtins
         for eng in BUILTINS.values():
             assert hasattr(builtins, eng), \
-                f"{eng} är inte en Python-builtin"
+                f_("{eng} is not a Python buildin")

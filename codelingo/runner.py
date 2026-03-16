@@ -108,7 +108,7 @@ def _run_code_in_process(code: str, result_queue, timeout: float):
 
     except SyntaxError as e:
         result_queue.put(ExecutionResult(
-            stderr=f"Syntaxfel på rad {e.lineno}: {e.msg}",
+            stderr=f_("Syntax error on line {e.lineno}: { "e.msg".}"),
             return_code=1,
         ))
     except Exception as e:
