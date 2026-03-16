@@ -1,148 +1,38 @@
-# CodeLingo - Translation Template
-# Copyright (C) 2024 CodeLingo
-# This file is distributed under the MIT license.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the codelingo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: codelingo 0.1.0\n"
+"Project-Id-Version: codelingo 0.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"POT-Creation-Date: 2026-03-16 15:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: codelingo/app.py
-msgid "CodeLingo"
+#: codelingo/window.py:29
+msgid "CodeLingo - Program in Swedish!"
 msgstr ""
 
-#: codelingo/window.py
-msgid "Program in Swedish!"
+#: codelingo/window.py:62
+msgid "Drive"
 msgstr ""
 
-#: codelingo/window.py
-msgid "Run"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Run the program (Ctrl+Enter)"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Debug"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Step through the code"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Clear all"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Show Python"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Show the translated Python code"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Swedish code"
-msgstr ""
-
-#: codelingo/window.py
+#: codelingo/window.py:125
 msgid "Python translation"
 msgstr ""
 
-#: codelingo/window.py
-msgid "Lessons"
-msgstr ""
-
-#: codelingo/window.py
+#: codelingo/window.py:311
 msgid "Previous"
 msgstr ""
 
-#: codelingo/window.py
-msgid "Next"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Show code example"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Challenge!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Check"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Result"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Clear"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Ready to program!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Write some code first!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Running program..."
-msgstr ""
-
-#: codelingo/window.py
-msgid "Translation error:"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Time limit exceeded!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Done!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Error during execution"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Well done! Correct answer!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Excellent! You completed the challenge!"
-msgstr ""
-
-#: codelingo/window.py
-msgid "Debugger started..."
-msgstr ""
-
-#: codelingo/window.py
-msgid "Debugging complete."
-msgstr ""
-
-#: codelingo/window.py
-msgid "Variables"
-msgstr ""
-
-#: codelingo/output_panel.py
-msgid "Result"
-msgstr ""
-
-#: codelingo/output_panel.py
-msgid "Clear"
+#: codelingo/window.py:315
+msgid "Next page"
 msgstr ""

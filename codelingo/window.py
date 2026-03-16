@@ -17,6 +17,7 @@ from codelingo.output_panel import OutputPanel
 from codelingo.runner import Runner
 from codelingo.translator import Translator
 from codelingo.tutorials import TutorialManager
+from codelingo.i18n import _
 
 
 class CodeLingoWindow(Adw.ApplicationWindow):
@@ -25,7 +26,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title("CodeLingo - Programmera på svenska!")
+        self.set_title(_("CodeLingo - Program in Swedish!"))
         self.set_default_size(1200, 800)
 
         # Kärn-komponenter
@@ -58,7 +59,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         header.set_title_widget(title)
 
         # Knappar i header
-        self._run_button = Gtk.Button(label="Kör")
+        self._run_button = Gtk.Button(label=_("Drive"))
         self._run_button.add_css_class("suggested-action")
         self._run_button.set_icon_name("media-playback-start-symbolic")
         self._run_button.set_tooltip_text("Kör programmet (Ctrl+Enter)")
@@ -121,7 +122,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         self._python_revealer.set_transition_type(
             Gtk.RevealerTransitionType.SLIDE_DOWN
         )
-        python_frame = Gtk.Frame(label="Python-översättning")
+        python_frame = Gtk.Frame(label=_("Python translation"))
         python_scroll = Gtk.ScrolledWindow()
         python_scroll.set_max_content_height(150)
         python_scroll.set_propagate_natural_height(True)
@@ -307,11 +308,11 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         )
         nav_box.set_margin_top(12)
 
-        self._prev_step_btn = Gtk.Button(label="Föregående")
+        self._prev_step_btn = Gtk.Button(label=_("Previous"))
         self._prev_step_btn.connect("clicked", self._on_prev_step)
         nav_box.append(self._prev_step_btn)
 
-        self._next_step_btn = Gtk.Button(label="Nästa")
+        self._next_step_btn = Gtk.Button(label=_("Next page"))
         self._next_step_btn.add_css_class("suggested-action")
         self._next_step_btn.connect("clicked", self._on_next_step)
         nav_box.append(self._next_step_btn)
