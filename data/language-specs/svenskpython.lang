@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GtkSourceView language definition for Swedish Python (SvenskPython)
+  Used by CodeLingo to highlight Swedish programming keywords.
+-->
+<language id="svenskpython" name="SvenskPython" version="2.0"
+          _section="Source">
+  <metadata>
+    <property name="mimetypes">text/x-svenskpython</property>
+    <property name="globs">*.svpy</property>
+    <property name="line-comment-start">#</property>
+  </metadata>
+
+  <styles>
+    <style id="keyword"        name="Nyckelord"       map-to="def:keyword"/>
+    <style id="builtin"        name="Inbyggd funktion" map-to="def:builtin"/>
+    <style id="string"         name="Sträng"          map-to="def:string"/>
+    <style id="number"         name="Tal"             map-to="def:number"/>
+    <style id="comment"        name="Kommentar"       map-to="def:comment"/>
+    <style id="boolean"        name="Boolesk"         map-to="def:boolean"/>
+    <style id="operator"       name="Operator"        map-to="def:operator"/>
+    <style id="function-name"  name="Funktionsnamn"   map-to="def:function"/>
+  </styles>
+
+  <definitions>
+    <!-- Kommentarer -->
+    <context id="comment" style-ref="comment" end-at-line-end="true"
+             class="comment" class-disabled="no-spell-check">
+      <start>#</start>
+    </context>
+
+    <!-- Strängar med dubbla citattecken -->
+    <context id="double-quoted-string" style-ref="string" class="string"
+             end-at-line-end="true">
+      <start>"</start>
+      <end>"</end>
+      <include>
+        <context id="escape-double" style-ref="def:special-char">
+          <match>\\.</match>
+        </context>
+      </include>
+    </context>
+
+    <!-- Strängar med enkla citattecken -->
+    <context id="single-quoted-string" style-ref="string" class="string"
+             end-at-line-end="true">
+      <start>'</start>
+      <end>'</end>
+      <include>
+        <context id="escape-single" style-ref="def:special-char">
+          <match>\\.</match>
+        </context>
+      </include>
+    </context>
+
+    <!-- Trippelcitat-strängar -->
+    <context id="triple-double-quoted-string" style-ref="string" class="string">
+      <start>"""</start>
+      <end>"""</end>
+    </context>
+
+    <context id="triple-single-quoted-string" style-ref="string" class="string">
+      <start>'''</start>
+      <end>'''</end>
+    </context>
+
+    <!-- Tal -->
+    <context id="number" style-ref="number">
+      <match extended="true">
+        (?&lt;![\w\.])
+        (0[xX][0-9a-fA-F]+|
+         0[bB][01]+|
+         0[oO][0-7]+|
+         [0-9]+(\.[0-9]+)?([eE][+-]?[0-9]+)?)
+        (?![\w\.])
+      </match>
+    </context>
+
+    <!-- Svenska nyckelord -->
+    <context id="keyword" style-ref="keyword">
+      <keyword>om</keyword>
+      <keyword>annars</keyword>
+      <keyword>eller_om</keyword>
+      <keyword>medan</keyword>
+      <keyword>för</keyword>
+      <keyword>i</keyword>
+      <keyword>funktion</keyword>
+      <keyword>returnera</keyword>
+      <keyword>sant</keyword>
+      <keyword>falskt</keyword>
+      <keyword>och</keyword>
+      <keyword>eller</keyword>
+      <keyword>inte</keyword>
+      <keyword>ingen</keyword>
+      <keyword>klass</keyword>
+      <keyword>importera</keyword>
+      <keyword>från</keyword>
+      <keyword>som</keyword>
+      <keyword>försök</keyword>
+      <keyword>utom</keyword>
+      <keyword>slutligen</keyword>
+      <keyword>med</keyword>
+      <keyword>avbryt</keyword>
+      <keyword>fortsätt</keyword>
+      <keyword>godkänn</keyword>
+      <keyword>ge</keyword>
+      <keyword>är</keyword>
+      <keyword>höj</keyword>
+      <keyword>global</keyword>
+    </context>
+
+    <!-- Booleska värden -->
+    <context id="boolean" style-ref="boolean">
+      <keyword>sant</keyword>
+      <keyword>falskt</keyword>
+      <keyword>ingen</keyword>
+    </context>
+
+    <!-- Svenska inbyggda funktioner -->
+    <context id="builtin" style-ref="builtin">
+      <keyword>skriv</keyword>
+      <keyword>längd</keyword>
+      <keyword>omfång</keyword>
+      <keyword>inmatning</keyword>
+      <keyword>heltal</keyword>
+      <keyword>decimaltal</keyword>
+      <keyword>text</keyword>
+      <keyword>lista</keyword>
+      <keyword>ordbok</keyword>
+      <keyword>typ</keyword>
+      <keyword>sortera</keyword>
+      <keyword>summa</keyword>
+      <keyword>min_värde</keyword>
+      <keyword>max_värde</keyword>
+      <keyword>absolut</keyword>
+      <keyword>boolesk</keyword>
+      <keyword>mängd</keyword>
+      <keyword>tuppel</keyword>
+      <keyword>uppräkning</keyword>
+      <keyword>zippa</keyword>
+      <keyword>karta</keyword>
+      <keyword>filtrera</keyword>
+    </context>
+
+    <!-- Operatorer -->
+    <context id="operator" style-ref="operator">
+      <match>[+\-*/%=&lt;&gt;!&amp;|^~]</match>
+    </context>
+
+    <!-- Funktionsdefinitioner -->
+    <context id="function-definition">
+      <match>(funktion)\s+(\w+)</match>
+      <include>
+        <context sub-pattern="1" style-ref="keyword"/>
+        <context sub-pattern="2" style-ref="function-name"/>
+      </include>
+    </context>
+
+    <!-- Klassdefinitioner -->
+    <context id="class-definition">
+      <match>(klass)\s+(\w+)</match>
+      <include>
+        <context sub-pattern="1" style-ref="keyword"/>
+        <context sub-pattern="2" style-ref="function-name"/>
+      </include>
+    </context>
+
+    <!-- Huvudkontext -->
+    <context id="svenskpython" class="no-spell-check">
+      <include>
+        <context ref="comment"/>
+        <context ref="triple-double-quoted-string"/>
+        <context ref="triple-single-quoted-string"/>
+        <context ref="double-quoted-string"/>
+        <context ref="single-quoted-string"/>
+        <context ref="number"/>
+        <context ref="function-definition"/>
+        <context ref="class-definition"/>
+        <context ref="keyword"/>
+        <context ref="boolean"/>
+        <context ref="builtin"/>
+        <context ref="operator"/>
+      </include>
+    </context>
+  </definitions>
+</language>

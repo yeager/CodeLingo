@@ -1,0 +1,55 @@
+/* CodeLingo - Barnvänlig CSS */
+
+/* Allmänt */
+window {
+    font-size: 14px;
+}
+
+/* Editor */
+textview.sourceview {
+    font-family: "Source Code Pro", "JetBrains Mono", "Fira Code", monospace;
+    font-size: 16px;
+}
+
+/* Knappar */
+button.suggested-action {
+    min-height: 36px;
+    min-width: 80px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button.destructive-action {
+    min-height: 36px;
+}
+
+/* Tutorial-panel */
+.boxed-list row {
+    min-height: 56px;
+    padding: 8px;
+}
+
+/* Output-panel */
+.output-success {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.output-error {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Debugger */
+.debug-variable-name {
+    font-weight: bold;
+    color: @accent_color;
+}
+
+.debug-variable-value {
+    font-family: monospace;
+}
+
+.debug-current-line {
+    background-color: rgba(255, 235, 59, 0.3);
+}

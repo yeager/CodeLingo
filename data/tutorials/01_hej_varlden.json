@@ -1,0 +1,28 @@
+{
+  "id": "01_hej_varlden",
+  "title": "Hej, världen!",
+  "description": "Skriv ditt allra första program",
+  "age_group": "8-10",
+  "category": "grundläggande",
+  "steps": [
+    {
+      "instruction": "Välkommen till CodeLingo! Låt oss skriva ditt första program.\n\nSkriv detta i editorn:",
+      "code_hint": "skriv(\"Hej, världen!\")",
+      "expected_output": "Hej, världen!\n",
+      "explanation": "skriv() skriver text på skärmen. Texten måste vara inom citattecken."
+    },
+    {
+      "instruction": "Bra jobbat! Nu ska vi skriva ut flera saker.\n\nProva att skriva:",
+      "code_hint": "skriv(\"Jag heter CodeLingo\")\nskriv(\"Jag kan programmera!\")",
+      "expected_output": "Jag heter CodeLingo\nJag kan programmera!\n",
+      "explanation": "Du kan ha flera skriv()-kommandon. Varje skriv() skriver på en ny rad."
+    }
+  ],
+  "challenges": [
+    {
+      "prompt": "Kan du skriva ut ditt eget namn?",
+      "validator": "output_not_empty",
+      "hint": "Använd skriv(\"ditt namn här\")"
+    }
+  ]
+}

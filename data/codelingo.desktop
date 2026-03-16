@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=CodeLingo
+Name[sv]=CodeLingo
+GenericName=Programming for Kids
+GenericName[sv]=Programmering för barn
+Comment=Learn programming with Swedish commands
+Comment[sv]=Lär dig programmera med svenska kommandon
+Exec=codelingo
+Icon=se.codelingo.CodeLingo
+Terminal=false
+Type=Application
+Categories=Education;Development;IDE;
+Keywords=programming;kids;swedish;python;coding;education;
+Keywords[sv]=programmering;barn;svenska;python;kodning;utbildning;
+StartupNotify=true

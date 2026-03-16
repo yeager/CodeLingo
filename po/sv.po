@@ -1,0 +1,149 @@
+# Swedish translation for CodeLingo
+# Copyright (C) 2024 CodeLingo
+# This file is distributed under the MIT license.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: codelingo 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: CodeLingo <info@codelingo.se>\n"
+"Language-Team: Swedish\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: codelingo/app.py
+msgid "CodeLingo"
+msgstr "CodeLingo"
+
+#: codelingo/window.py
+msgid "Program in Swedish!"
+msgstr "Programmera på svenska!"
+
+#: codelingo/window.py
+msgid "Run"
+msgstr "Kör"
+
+#: codelingo/window.py
+msgid "Run the program (Ctrl+Enter)"
+msgstr "Kör programmet (Ctrl+Enter)"
+
+#: codelingo/window.py
+msgid "Debug"
+msgstr "Debugga"
+
+#: codelingo/window.py
+msgid "Step through the code"
+msgstr "Stega igenom koden"
+
+#: codelingo/window.py
+msgid "Clear all"
+msgstr "Rensa allt"
+
+#: codelingo/window.py
+msgid "Show Python"
+msgstr "Visa Python"
+
+#: codelingo/window.py
+msgid "Show the translated Python code"
+msgstr "Visa den översatta Python-koden"
+
+#: codelingo/window.py
+msgid "Swedish code"
+msgstr "Svensk kod"
+
+#: codelingo/window.py
+msgid "Python translation"
+msgstr "Python-översättning"
+
+#: codelingo/window.py
+msgid "Lessons"
+msgstr "Lektioner"
+
+#: codelingo/window.py
+msgid "Previous"
+msgstr "Föregående"
+
+#: codelingo/window.py
+msgid "Next"
+msgstr "Nästa"
+
+#: codelingo/window.py
+msgid "Show code example"
+msgstr "Visa kodexempel"
+
+#: codelingo/window.py
+msgid "Challenge!"
+msgstr "Utmaning!"
+
+#: codelingo/window.py
+msgid "Check"
+msgstr "Kontrollera"
+
+#: codelingo/window.py
+msgid "Result"
+msgstr "Resultat"
+
+#: codelingo/window.py
+msgid "Clear"
+msgstr "Rensa"
+
+#: codelingo/window.py
+msgid "Ready to program!"
+msgstr "Redo att programmera!"
+
+#: codelingo/window.py
+msgid "Write some code first!"
+msgstr "Skriv lite kod först!"
+
+#: codelingo/window.py
+msgid "Running program..."
+msgstr "Kör programmet..."
+
+#: codelingo/window.py
+msgid "Translation error:"
+msgstr "Översättningsfel:"
+
+#: codelingo/window.py
+msgid "Time limit exceeded!"
+msgstr "Tidsgräns överskriden!"
+
+#: codelingo/window.py
+msgid "Done!"
+msgstr "Klart!"
+
+#: codelingo/window.py
+msgid "Error during execution"
+msgstr "Fel vid körning"
+
+#: codelingo/window.py
+msgid "Well done! Correct answer!"
+msgstr "Bra jobbat! Rätt svar!"
+
+#: codelingo/window.py
+msgid "Excellent! You completed the challenge!"
+msgstr "Utmärkt! Du klarade utmaningen!"
+
+#: codelingo/window.py
+msgid "Debugger started..."
+msgstr "Debugger startad..."
+
+#: codelingo/window.py
+msgid "Debugging complete."
+msgstr "Debugging klar."
+
+#: codelingo/window.py
+msgid "Variables"
+msgstr "Variabler"
+
+#: codelingo/output_panel.py
+msgid "Result"
+msgstr "Resultat"
+
+#: codelingo/output_panel.py
+msgid "Clear"
+msgstr "Rensa"

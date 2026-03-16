@@ -1,0 +1,34 @@
+{
+  "id": "02_variabler",
+  "title": "Variabler - spara saker",
+  "description": "Lär dig använda variabler för att spara värden",
+  "age_group": "8-12",
+  "category": "grundläggande",
+  "steps": [
+    {
+      "instruction": "En variabel är som en låda där du kan spara saker.\n\nProva detta:",
+      "code_hint": "namn = \"Ada\"\nskriv(namn)",
+      "expected_output": "Ada\n",
+      "explanation": "namn är en variabel. Vi sparade texten \"Ada\" i den. Sedan skrev vi ut den med skriv()."
+    },
+    {
+      "instruction": "Variabler kan också spara tal!\n\nProva:",
+      "code_hint": "ålder = 10\nskriv(\"Jag är\", ålder, \"år gammal\")",
+      "expected_output": "Jag är 10 år gammal\n",
+      "explanation": "Variabler kan spara tal (utan citattecken) och text (med citattecken)."
+    },
+    {
+      "instruction": "Du kan räkna med variabler!\n\nProva:",
+      "code_hint": "a = 5\nb = 3\nskriv(a + b)\nskriv(a * b)",
+      "expected_output": "8\n15\n",
+      "explanation": "+ adderar tal, * multiplicerar tal, - subtraherar och / dividerar."
+    }
+  ],
+  "challenges": [
+    {
+      "prompt": "Skapa två variabler med ditt förnamn och efternamn, och skriv ut dem tillsammans!",
+      "validator": "output_not_empty",
+      "hint": "förnamn = \"Ditt\"\nefternamn = \"Namn\"\nskriv(förnamn, efternamn)"
+    }
+  ]
+}
