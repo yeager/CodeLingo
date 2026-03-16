@@ -59,7 +59,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         header.set_title_widget(title)
 
         # Knappar i header
-        self._run_button = Gtk.Button(label=_("Drive"))
+        self._run_button = Gtk.Button(label=_("Run"))
         self._run_button.add_css_class("suggested-action")
         self._run_button.set_icon_name("media-playback-start-symbolic")
         self._run_button.set_tooltip_text("Kör programmet (Ctrl+Enter)")
@@ -312,7 +312,7 @@ class CodeLingoWindow(Adw.ApplicationWindow):
         self._prev_step_btn.connect("clicked", self._on_prev_step)
         nav_box.append(self._prev_step_btn)
 
-        self._next_step_btn = Gtk.Button(label=_("Next page"))
+        self._next_step_btn = Gtk.Button(label=_("Next"))
         self._next_step_btn.add_css_class("suggested-action")
         self._next_step_btn.connect("clicked", self._on_next_step)
         nav_box.append(self._next_step_btn)

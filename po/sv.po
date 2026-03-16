@@ -6,7 +6,7 @@ msgstr ""
 msgid "CodeLingo - Program in Swedish!"
 msgstr "CodeLingo - Programmera på svenska!"
 
-msgid "Drive"
+msgid "Run"
 msgstr "Kör"
 
 msgid "Python translation"
@@ -15,6 +15,6 @@ msgstr "Python-översättning"
 msgid "Previous"
 msgstr "Föregående"
 
-msgid "Next page"
+msgid "Next"
 msgstr "Nästa"
 

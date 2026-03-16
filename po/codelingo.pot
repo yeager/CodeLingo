@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: codelingo 0.2.0\n"
+"Project-Id-Version: codelingo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-16 15:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -22,7 +22,7 @@ msgid "CodeLingo - Program in Swedish!"
 msgstr ""
 
 #: codelingo/window.py:62
-msgid "Drive"
+msgid "Run"
 msgstr ""
 
 #: codelingo/window.py:125
@@ -34,5 +34,5 @@ msgid "Previous"
 msgstr ""
 
 #: codelingo/window.py:315
-msgid "Next page"
+msgid "Next"
 msgstr ""
