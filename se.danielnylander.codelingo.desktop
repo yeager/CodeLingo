@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=CodeLingo
+Name[sv]=CodeLingo
+Comment=Visual programming for beginners
+Comment[sv]=Visuell programmering för nybörjare
+GenericName=Accessibility Application
+GenericName[sv]=Tillgänglighetsapp
+Exec=python3 -m codelingo
+Icon=codelingo
+Terminal=false
+Type=Application
+Categories=Education;
+Keywords=accessibility;a11y;
+Keywords[sv]=tillgänglighet;funktionsnedsättning;
