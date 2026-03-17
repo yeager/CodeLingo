@@ -1,13 +1,19 @@
+# Translation file for CodeLingo
 msgid ""
 msgstr ""
-"Language: sv\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 msgid "CodeLingo - Program in Swedish!"
 msgstr "CodeLingo - Programmera på svenska!"
 
 msgid "Run"
 msgstr "Kör"
+
+msgid "Run the program (Ctrl+Enter)"
+msgstr "Kör programmet (Ctrl+Enter)"
 
 msgid "Python translation"
 msgstr "Python-översättning"
